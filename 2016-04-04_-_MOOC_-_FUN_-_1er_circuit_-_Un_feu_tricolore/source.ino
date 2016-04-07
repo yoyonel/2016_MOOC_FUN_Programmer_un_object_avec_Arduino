@@ -2,10 +2,10 @@
   Feu tricolore
   1) Allume la LED verte pendant 3 secondes,
   2) 
-  gerber/a) Eteindre la LED verte
+  a) Eteindre la LED verte
     b) Allumer la LED orange pendant 1 seconde
   3)
-  gerber/a) Eteindre la LED orange
+  a) Eteindre la LED orange
     b) Allumer la LED rouge pendant 3 secondes
   4) Eteindre la LED rouge
   -> Boucle (retour à 1)
@@ -21,17 +21,17 @@ int led_GREEN= 11;
 
 // Variables stockant les timings 
 // d'allumage des différentes LEDs (vert/rouge/orange)
-int timing_for_GREEN gerber/= 3000;
-int timing_for_RED gerber/= 3000;
-int timing_for_ORANGE gerber/= 1000;
+int timing_for_GREEN = 3000;
+int timing_for_RED = 3000;
+int timing_for_ORANGE = 1000;
 
 // le code dans cette fonction est exécuté une fois au début
 void setup() {
   // on indique les broches (13/12/11) des LEDs (rouge/orange/vert)
   // qui vont être mises sous tension
-  pinMode(led_RED, gerber/OUTPUT);
-  pinMode(led_ORANGE, gerber/OUTPUT);
-  pinMode(led_GREEN, gerber/OUTPUT);
+  pinMode(led_RED, OUTPUT);
+  pinMode(led_ORANGE, OUTPUT);
+  pinMode(led_GREEN, OUTPUT);
 }
  
 // le code dans cette fonction est exécuté en boucle
